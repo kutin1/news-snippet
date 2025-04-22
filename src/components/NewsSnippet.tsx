@@ -139,9 +139,9 @@ const NewsSnippet: React.FC<Props> = ({ data }) => {
 
         <div className={styles.relevanceDropdown}>
           <Dropdown menu={{ items: [{ key: "rel", label: "By relevance" }, { key: "date", label: "By date" }] }}>
-            <a>
-              By relevance <DownOutlined />
-            </a>
+          <button className={styles.relevanceButton}>
+            By relevance <DownOutlined />
+          </button>
           </Dropdown>
         </div>
       </div>
